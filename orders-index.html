@@ -2151,7 +2151,7 @@
 				<div class="main-content app-content mt-0">
 					<div class="side-app">
 						<!-- CONTAINER -->
-						< class="main-container container-fluid">
+						<clas class="main-container container-fluid">
 							<!-- PAGE-HEADER -->
 							<div class="page-header">
 								<h1 class="page-title">Edit Patient</h1>
@@ -2166,39 +2166,107 @@
 							<!-- PAGE-HEADER END -->
 
 							<!-- ROW-1 OPEN -->
+                             
+                            <!-- Background color of page-->
+                            <div class="bg-white">
 
                             <!-- Title -->
-
-                            <h1 class=" display-1">Orders</h1>
+                             <h1 class=" display-1 mx-2">Orders</h1>
 
                             <!-- Select a Patient Button-->
+                            <a href="javascript:void(0)" class="btn btn-secondary mx-3 mb-3 ">+ Start order by selecting a patient</a>
 
-                            <a href="javascript:void(0)" class="btn btn-secondary mx-2 mb-4 ">+ Start order by selecting a patient</a>
-
-							<!-- SEARCH BAR-->
-
-                            <div class="input-group md-form form-sm form-2 p-1 w-25">
-                                <input class="form-control my-0 py-1  " type="text" placeholder="Enter order #, RX #, or patient name..." aria-label="Search">
+							<!-- SEARCH BAR --- ORDER # RX # PATIENT NAME-->
+                            <div class="input-group md-form form-sm form-2 pb-2 w-25 m-3" >
+                                <input class="form-control my-0 py-2  " type="text" placeholder="Enter order #, RX #, or patient name..." aria-label="Search">
                                 <div class="input-group-append">
-                                  <span class="input-group-text h-100 " id="basic-text1"><i class=" p-1 h-100 bi-search"
+                                  <span class="input-group-text h-100 " id="basic-text1"><i class=" p-3 h-100 bi-search"
                                     ></i></span>
                                 </div>
                               </div>
 
+                              <!-- FORMS CONTAINER-->
+                            <div class="container justify-content-start m-0 pt-3">
 
-                            
-                              
-                              
+                              <div class="row row-cols-3 justify-content-start">
 
-                          
-                             
+                              <!-- Stage Form-->
+                              <div class="form-group col-lg-5"  >
+                                <label class="form-label " >Stage</label>
+                                <select class="form-control select2 select2-hidden-accessible " data-placeholder="Choose 
+                                Stage" multiple="" tabindex="-1" aria-hidden="true" >
+                                        <option value="Data Entry">
+                                            Data Entry
+                                        </option>        
+                                        <option value="Doctor Approval">
+                                            Doctor Approval
+                                        </option>
+                                        <option value="Filling">
+                                            Filling
+                                        </option>
+                                        <option value="Precheck">
+                                            Precheck
+                                        </option>
+                                        <option value="Verification">
+                                            Verification
+                                        </option>
+                                        <option selected="" value="Shipping">
+                                            Shipping
+                                        </option>
+                                        <option value="Split Release">
+                                            Split Release
+                                        </option>
+                                    </select><span class="select2 select2-container select2-container--default select2-container--below" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1"><ul class="select2-selection__rendered"><li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="textbox" aria-autocomplete="list" placeholder="Choose Browser" style="width: 2133px; "></li></ul></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                            </div>
 
+
+                            <!-- Status Form-->
+
+                            <div class="form-group col-lg-5">
+                                <label class="form-label">Status</label>
+                                <select class="form-control select2 select2-hidden-accessible" data-placeholder="Choose Status" multiple="" tabindex="-1" aria-hidden="true">
+                                        <option value="Firefox">
+                                            Firefox
+                                        </option>
+                                        <option value="Chrome selected">
+                                            Chrome
+                                        </option>
+                                        <option value="Safari">
+                                            Safari
+                                        </option>
+                                        <option selected="" value="Opera">
+                                            Opera
+                                        </option>
+                                        <option value="Internet Explorer">
+                                            Internet Explorer
+                                        </option>
+                                    </select><span class="select2 select2-container select2-container--default select2-container--below" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1"><ul class="select2-selection__rendered"><li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="textbox" aria-autocomplete="list" placeholder="Choose Browser" style="width: 2133px;"></li></ul></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                            </div>
+
+
+                            <!--Count Form-->
+                            <div class="form-group col-lg-2">
+                                <label class="form-label">Count</label>
+                                <select class="form-control select2 form-select select2-hidden-accessible" data-placeholder="Choose one" tabindex="-1" aria-hidden="true">
+                                        <option label="Choose one">
+                                        </option>
+                                        <option value="1">Chuck Testa</option>
+                                        <option value="2">Sage Cattabriga-Alosa</option>
+                                        <option value="3">Nikola Tesla</option>
+                                        <option value="4">Cattabriga-Alosa</option>
+                                        <option value="5">Nikola Alosa</option>
+                                    </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-7bvk-container"><span class="select2-selection__rendered" id="select2-7bvk-container"><span class="select2-selection__placeholder">Choose one</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    
 							<!-- TABLE -->.
 
 							<div class="table-responsive bg-primary-transparent">
-								<table class="table text-nowrap text-md-nowrap mb-0">
-									<thead class="bg-primary-gradient p-4">
-										<tr>
+								<table class="table text-nowrap text-md-nowrap mb-0 ">
+									<thead class=" bg-primary-gradient text-white ">
+										<tr class="">
 											<th>Order #</th>
 											<th>Prescription</th>
 											<th>Patient</th>
@@ -2383,6 +2451,8 @@
 
 							<!-- ROW-1 CLOSED -->
 						</div>
+
+                    </div>
 						<!-- CONTAINER CLOSED -->
 					</div>
 				</div>
