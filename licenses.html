@@ -2171,303 +2171,109 @@
                             <div>
 
                             <!-- Title -->
-                             <h1 class="display-3 ">Orders</h1>
+                             <h1 class="display-3 ">Licenses</h1>
 
-                            <!-- Select a Patient Button-->
-                            <a href="javascript:void(0)" class="btn btn-secondary  mb-3 ">+ Start order by selecting a patient</a>
-
-							<!-- SEARCH BAR --- ORDER # RX # PATIENT NAME-->
-                            <div class="input-group md-form form-sm form-2 pb-5 w-80 " >
-                                <input class="form-control my-0 py-2 col-sm-5 " type="text" placeholder="Enter order #, RX #, or patient name..." aria-label="Search">
-                                <div class="input-group-append">
-                                  <span class="input-group-text h-100 " id="basic-text1"><i class=" p-3 h-100 bi-search"
-                                    ></i></span>
-                                </div>
-                              </div>
+                            
 
 
-							  <!-- TABLE & FORMS CONTAINER-->
+
+
+                            <!-- IF NO CURRENT SPECIALS SHOW ALERT-->
+                                                   
+                            <!--
+
+                            <div class="flex justify-content-start ">
+                                <div class="alert alert-warning col-md-6 py-5 mt-3" role="alert">
+                                      <i class="fa fa-exclamation me-2" aria-hidden="true"></i>Warning - No clinics currently selected.
+                                 </div>
+                            </div>
+
+                            -->
+
+                              
+                            <!-- TABLE -->
+ 
+					  
 							<div class=" card bg-white p-4 ">
-
-                              <!-- FORMS CONTAINER-->
-                            <div class=" justify-content-start m-0 pt-3">
-
-                              <div class="row row-cols-3 justify-content-start">
-
-                              <!-- Stage Form-->
-                              <div class="form-group col-lg-5"  >
-                                <label class="form-label " >Stage</label>
-                                <select class="form-control select2 select2-hidden-accessible " data-placeholder="Choose 
-                                Stage" multiple="" tabindex="-1" aria-hidden="true" >
-                                        <option value="Data Entry">
-                                            Data Entry
-                                        </option>        
-                                        <option value="Doctor Approval">
-                                            Doctor Approval
-                                        </option>
-                                        <option value="Filling">
-                                            Filling
-                                        </option>
-                                        <option value="Precheck">
-                                            Precheck
-                                        </option>
-                                        <option value="Verification">
-                                            Verification
-                                        </option>
-                                        <option selected="" value="Shipping">
-                                            Shipping
-                                        </option>
-                                        <option value="Split Release">
-                                            Split Release
-                                        </option>
-                                    </select><span class="select2 select2-container select2-container--default select2-container--below" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1"><ul class="select2-selection__rendered"><li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="textbox" aria-autocomplete="list" placeholder="Choose Browser" style="width: 2133px; "></li></ul></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-                            </div>
-
-
-                            <!-- Status Form-->
-
-                            <div class="form-group col-lg-5">
-                                <label class="form-label">Status</label>
-                                <select class="form-control select2 select2-hidden-accessible" data-placeholder="Choose Status" multiple="" tabindex="-1" aria-hidden="true">
-                                        <option value="Firefox">
-                                            Firefox
-                                        </option>
-                                        <option value="Chrome selected">
-                                            Chrome
-                                        </option>
-                                        <option value="Safari">
-                                            Safari
-                                        </option>
-                                        <option selected="" value="Opera">
-                                            Opera
-                                        </option>
-                                        <option value="Internet Explorer">
-                                            Internet Explorer
-                                        </option>
-                                    </select><span class="select2 select2-container select2-container--default select2-container--below" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1"><ul class="select2-selection__rendered"><li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="textbox" aria-autocomplete="list" placeholder="Choose Browser" style="width: 2133px;"></li></ul></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-                            </div>
-
-
-                            <!--Count Form-->
-                            <div class="form-group col-lg-2">
-                                <label class="form-label">Count</label>
-                                <select class="form-control select2 form-select select2-hidden-accessible" data-placeholder="Choose one" tabindex="-1" aria-hidden="true">
-                                        <option label="Choose one">
-                                        </option>
-                                        <option value="1">Chuck Testa</option>
-                                        <option value="2">Sage Cattabriga-Alosa</option>
-                                        <option value="3">Nikola Tesla</option>
-                                        <option value="4">Cattabriga-Alosa</option>
-                                        <option value="5">Nikola Alosa</option>
-                                    </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-7bvk-container"><span class="select2-selection__rendered" id="select2-7bvk-container"><span class="select2-selection__placeholder">Choose one</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    
-							<!-- TABLE -->
-
+                                          
+				
 							<div class=" table-responsive">
 								<table id="data-table" class=" table border table-bordered text-nowrap mb-0 ">
 									<thead class="">
 										<tr>
-											<th>Order #</th>
-											<th>Prescription</th>
-											<th>Patient</th>
-											<th>Prescriber</th>
-                                            <th>Status</th>
-                                            <th>Stage</th>
-                                            <th>Date</th>
+											<th>STATE</th>
+                                            <th>TYPE</th>
+                                            <th>LICENSE #</th>
+                                            <th>EXP DATE</th>
+                                            <th>STATUS</th>
+											<th class="align-middle">EDIT LICENSE</th>
+											
+                                            
+                                         
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
-											<td class="align-middle">1</td>
-											<td class="align-middle">
-												<button type="button" class="btn btn-info" fdprocessedid="">View PDF</button></td>
-											<td class="align-middle">Taylor, Aaron</td>
-											<td class="align-middle">JOE ROGAN</td>
-                                            <td class="align-middle">Completed</td>
-                                            <td class="align-middle">
-												<div >
-													<span class="badge bg-success-transparent rounded-pill text-success p-2 px-3">Shipped</span>
-												</div>
-											</td>
-                                            <td class="align-middle">08/03/2023 @ 8:46 PM</td>
+											<td class="align-middle">Florida</td>	
+                                            <td class="align-middle">Medical</td>	
+                                            <td class="align-middle">204656</td>	
+                                            <td class="align-middle">2023-10-25</td>	
+                                            <td class=" align-middle"><span class="badge bg-danger rounded-pill p-2 px-3">Not Approved</span></td>											
+											<td >
+												<button type="button" class="btn btn-info align-middle " fdprocessedid="">EDIT</button></td>
+											
 
 										</tr>
-										<tr>
-											<td class="align-middle">1</td>
-											<td class="align-middle">
-												<button type="button" class="btn btn-info" fdprocessedid="">View PDF</button></td>
-											<td class="align-middle">Taylor, Aaron</td>
-											<td class="align-middle">JOE ROGAN</td>
-                                            <td class="align-middle">Completed</td>
-                                            <td class="align-middle">
-												<div >
-													<span class="badge bg-success-transparent rounded-pill text-success p-2 px-3">Shipped</span>
-												</div>
-											</td>
-                                            <td class="align-middle">08/03/2023 @ 8:46 PM</td>
+                                        <tr>
+											<td class="align-middle">Florida</td>	
+                                            <td class="align-middle">Medical</td>	
+                                            <td class="align-middle">204656</td>	
+                                            <td class="align-middle">2023-10-25</td>	
+                                            <td class=" align-middle"><span class="badge bg-danger rounded-pill p-2 px-3">Not Approved</span></td>											
+											<td >
+												<button type="button" class="btn btn-info align-middle " fdprocessedid="">EDIT</button></td>
+											
 
 										</tr>
-										<tr>
-											<td class="align-middle">1</td>
-											<td class="align-middle">
-												<button type="button" class="btn btn-info" fdprocessedid="">View PDF</button></td>
-											<td class="align-middle">Taylor, Aaron</td>
-											<td class="align-middle">JOE ROGAN</td>
-                                            <td class="align-middle">Completed</td>
-                                            <td class="align-middle">
-												<div >
-													<span class="badge bg-success-transparent rounded-pill text-success p-2 px-3">Shipped</span>
-												</div>
-											</td>
-                                            <td class="align-middle">08/03/2023 @ 8:46 PM</td>
+                                        <tr>
+											<td class="align-middle">Florida</td>	
+                                            <td class="align-middle">Medical</td>	
+                                            <td class="align-middle">204656</td>	
+                                            <td class="align-middle">2023-10-25</td>	
+                                            <td class=" align-middle"><span class="badge bg-danger rounded-pill p-2 px-3">Not Approved</span></td>											
+											<td >
+												<button type="button" class="btn btn-info align-middle " fdprocessedid="">EDIT</button></td>
+											
 
 										</tr>
-										<tr>
-											<td class="align-middle">1</td>
-											<td class="align-middle">
-												<button type="button" class="btn btn-info" fdprocessedid="">View PDF</button></td>
-											<td class="align-middle">Taylor, Aaron</td>
-											<td class="align-middle">JOE ROGAN</td>
-                                            <td class="align-middle">Completed</td>
-                                            <td class="align-middle">
-												<div >
-													<span class="badge bg-success-transparent rounded-pill text-success p-2 px-3">Shipped</span>
-												</div>
-											</td>
-                                            <td class="align-middle">08/03/2023 @ 8:46 PM</td>
+                                        <tr>
+											<td class="align-middle">Florida</td>	
+                                            <td class="align-middle">Medical</td>	
+                                            <td class="align-middle">204656</td>	
+                                            <td class="align-middle">2023-10-25</td>	
+                                            <td class=" align-middle"><span class="badge bg-danger rounded-pill p-2 px-3">Not Approved</span></td>											
+											<td >
+												<button type="button" class="btn btn-info align-middle " fdprocessedid="">EDIT</button></td>
+											
 
 										</tr>
-										<tr>
-											<td class="align-middle">1</td>
-											<td class="align-middle">
-												<button type="button" class="btn btn-info" fdprocessedid="">View PDF</button></td>
-											<td class="align-middle">Taylor, Aaron</td>
-											<td class="align-middle">JOE ROGAN</td>
-                                            <td class="align-middle">Completed</td>
-                                            <td class="align-middle">
-												<div >
-													<span class="badge bg-success-transparent rounded-pill text-success p-2 px-3">Shipped</span>
-												</div>
-											</td>
-                                            <td class="align-middle">08/03/2023 @ 8:46 PM</td>
-
-										</tr>
-										<tr>
-											<td class="align-middle">1</td>
-											<td class="align-middle">
-												<button type="button" class="btn btn-info" fdprocessedid="">View PDF</button></td>
-											<td class="align-middle">Taylor, Aaron</td>
-											<td class="align-middle">JOE ROGAN</td>
-                                            <td class="align-middle">Completed</td>
-                                            <td class="align-middle">
-												<div >
-													<span class="badge bg-success-transparent rounded-pill text-success p-2 px-3">Shipped</span>
-												</div>
-											</td>
-                                            <td class="align-middle">08/03/2023 @ 8:46 PM</td>
-
-										</tr>
-										<tr>
-											<td class="align-middle">1</td>
-											<td class="align-middle">
-												<button type="button" class="btn btn-info" fdprocessedid="">View PDF</button></td>
-											<td class="align-middle">Taylor, Aaron</td>
-											<td class="align-middle">JOE ROGAN</td>
-                                            <td class="align-middle">Completed</td>
-                                            <td class="align-middle">
-												<div >
-													<span class="badge bg-success-transparent rounded-pill text-success p-2 px-3">Shipped</span>
-												</div>
-											</td>
-                                            <td class="align-middle">08/03/2023 @ 8:46 PM</td>
-
-										</tr>
-										<tr>
-											<td class="align-middle">1</td>
-											<td class="align-middle">
-												<button type="button" class="btn btn-info" fdprocessedid="">View PDF</button></td>
-											<td class="align-middle">Taylor, Aaron</td>
-											<td class="align-middle">JOE ROGAN</td>
-                                            <td class="align-middle">Completed</td>
-                                            <td class="align-middle">
-												<div >
-													<span class="badge bg-success-transparent rounded-pill text-success p-2 px-3">Shipped</span>
-												</div>
-											</td>
-                                            <td class="align-middle">08/03/2023 @ 8:46 PM</td>
-
-										</tr>
-										<tr>
-											<td class="align-middle">1</td>
-											<td class="align-middle">
-												<button type="button" class="btn btn-info" fdprocessedid="">View PDF</button></td>
-											<td class="align-middle">Taylor, Aaron</td>
-											<td class="align-middle">JOE ROGAN</td>
-                                            <td class="align-middle">Completed</td>
-                                            <td class="align-middle">
-												<div >
-													<span class="badge bg-success-transparent rounded-pill text-success p-2 px-3">Shipped</span>
-												</div>
-											</td>
-                                            <td class="align-middle">08/03/2023 @ 8:46 PM</td>
-
-										</tr>
-										<tr>
-											<td class="align-middle">1</td>
-											<td class="align-middle">
-												<button type="button" class="btn btn-info" fdprocessedid="">View PDF</button></td>
-											<td class="align-middle">Taylor, Aaron</td>
-											<td class="align-middle">JOE ROGAN</td>
-                                            <td class="align-middle">Completed</td>
-                                            <td class="align-middle">
-												<div >
-													<span class="badge bg-success-transparent rounded-pill text-success p-2 px-3">Shipped</span>
-												</div>
-											</td>
-                                            <td class="align-middle">08/03/2023 @ 8:46 PM</td>
-
-										</tr>
-										<tr>
-											<td class="align-middle">1</td>
-											<td class="align-middle">
-												<button type="button" class="btn btn-info" fdprocessedid="">View PDF</button></td>
-											<td class="align-middle">Taylor, Aaron</td>
-											<td class="align-middle">JOE ROGAN</td>
-                                            <td class="align-middle">Completed</td>
-                                            <td class="align-middle">
-												<div >
-													<span class="badge bg-success-transparent rounded-pill text-success p-2 px-3">Shipped</span>
-												</div>
-											</td>
-                                            <td class="align-middle">08/03/2023 @ 8:46 PM</td>
-
-										</tr>
-										<tr>
-											<td class="align-middle">1</td>
-											<td class="align-middle">
-												<button type="button" class="btn btn-info" fdprocessedid="">View PDF</button></td>
-											<td class="align-middle">Taylor, Aaron</td>
-											<td class="align-middle">JOE ROGAN</td>
-                                            <td class="align-middle">Completed</td>
-                                            <td class="align-middle">
-												<div >
-													<span class="badge bg-success-transparent rounded-pill text-success p-2 px-3">Shipped</span>
-												</div>
-											</td>
-                                            <td class="align-middle">08/03/2023 @ 8:46 PM</td>
+                                        <tr>
+											<td class="align-middle">Florida</td>	
+                                            <td class="align-middle">Medical</td>	
+                                            <td class="align-middle">204656</td>	
+                                            <td class="align-middle">2023-10-25</td>	
+                                            <td class=" align-middle"><span class="badge bg-danger rounded-pill p-2 px-3">Not Approved</span></td>											
+											<td >
+												<button type="button" class="btn btn-info align-middle " fdprocessedid="">EDIT</button></td>
+											
 
 										</tr>
                                         
-
 									</tbody>
 								</table>
 							</div>
 
-							<!-- PAGINATION -->
+							
 
 							<div class="pagination-wrapper p-5">
 								<nav aria-label="Page navigation">
@@ -2493,6 +2299,10 @@
 									</ul>
 								</nav>
 							</div>
+
+
+                     
+
 						</div>
 
 						
