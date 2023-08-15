@@ -2168,149 +2168,178 @@
 							<!-- ROW-1 OPEN -->
                              
                             <!-- PAGE CONTAINER-->
-                            <div>
-
-                            <!-- Title -->
-							<div class="d-flex gap-3 py-5 align-items-center">
-								<div>
-
-
-                             <h1 class="page-title ">Licenses</h1></div>
-
-							
-							 <div class="btn btn-primary p-2 ">Add License</div>
-
-							</div>
+                         
 
                             
+                             <h1 class="page-title py-5 ">Preferences</h1>
+							 
+                             <!-- Notifications -->
 
+							 <div class=" card bg-white ">
+                                <h3 class=" card-title card-header ">Notifications</h3>
+                               
 
+                            							           
+							  
 
-
-                            <!-- IF NO CURRENT SPECIALS SHOW ALERT-->
-                                                   
-                            <!--
-
-                            <div class="flex justify-content-start ">
-                                <div class="alert alert-warning col-md-6 py-5 mt-3" role="alert">
-                                      <i class="fa fa-exclamation me-2" aria-hidden="true"></i>Warning - No clinics currently selected.
-                                 </div>
-                            </div>
-
-                            -->
-
-                              
-                            <!-- TABLE -->
- 
-					  
-							<div class=" card bg-white p-4 ">
-                                          
-				
-							<div class=" table-responsive">
-								<table id="data-table" class=" table border table-bordered text-nowrap mb-0 ">
-									<thead class="">
-										<tr>
-											<th>STATE</th>
-                                            <th>TYPE</th>
-                                            <th>LICENSE #</th>
-                                            <th>EXP DATE</th>
-                                            <th>STATUS</th>
-											<th class="align-middle">EDIT LICENSE</th>
-											
-                                            
-                                         
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td class="align-middle">Florida</td>	
-                                            <td class="align-middle">Medical</td>	
-                                            <td class="align-middle">204656</td>	
-                                            <td class="align-middle">2023-10-25</td>	
-                                            <td class=" align-middle"><span class="badge bg-danger rounded-pill p-2 px-3">Not Approved</span></td>											
-											<td >
-												<button type="button" class="btn btn-info align-middle " fdprocessedid="">EDIT</button></td>
-											
-
-										</tr>
-                                        <tr>
-											<td class="align-middle">Florida</td>	
-                                            <td class="align-middle">Medical</td>	
-                                            <td class="align-middle">204656</td>	
-                                            <td class="align-middle">2023-10-25</td>	
-                                            <td class=" align-middle"><span class="badge bg-danger rounded-pill p-2 px-3">Not Approved</span></td>											
-											<td >
-												<button type="button" class="btn btn-info align-middle " fdprocessedid="">EDIT</button></td>
-											
-
-										</tr>
-                                        <tr>
-											<td class="align-middle">Florida</td>	
-                                            <td class="align-middle">Medical</td>	
-                                            <td class="align-middle">204656</td>	
-                                            <td class="align-middle">2023-10-25</td>	
-                                            <td class=" align-middle"><span class="badge bg-danger rounded-pill p-2 px-3">Not Approved</span></td>											
-											<td >
-												<button type="button" class="btn btn-info align-middle " fdprocessedid="">EDIT</button></td>
-											
-
-										</tr>
-                                        <tr>
-											<td class="align-middle">Florida</td>	
-                                            <td class="align-middle">Medical</td>	
-                                            <td class="align-middle">204656</td>	
-                                            <td class="align-middle">2023-10-25</td>	
-                                            <td class=" align-middle"><span class="badge bg-danger rounded-pill p-2 px-3">Not Approved</span></td>											
-											<td >
-												<button type="button" class="btn btn-info align-middle " fdprocessedid="">EDIT</button></td>
-											
-
-										</tr>
-                                        <tr>
-											<td class="align-middle">Florida</td>	
-                                            <td class="align-middle">Medical</td>	
-                                            <td class="align-middle">204656</td>	
-                                            <td class="align-middle">2023-10-25</td>	
-                                            <td class=" align-middle"><span class="badge bg-danger rounded-pill p-2 px-3">Not Approved</span></td>											
-											<td >
-												<button type="button" class="btn btn-info align-middle " fdprocessedid="">EDIT</button></td>
-											
-
-										</tr>
-                                        
-									</tbody>
-								</table>
-							</div>
 
 							
 
-							<div class="pagination-wrapper p-5">
-								<nav aria-label="Page navigation">
-									<ul class="pagination mb-0 justify-content-center">
-										<li class="page-item">
-											<a class="page-link" href="javascript:void(0)">1</a>
-										</li>
-										<li class="page-item">
-											<a class="page-link" href="javascript:void(0)">2</a>
-										</li>
-										<li class="page-item">
-											<a class="page-link" href="javascript:void(0)">3</a>
-										</li>
-										<li class="page-item">
-											<a class="page-link" href="javascript:void(0)">4</a>
-										</li>
-										<li class="page-item">
-											<a class="page-link" href="javascript:void(0)">5</a>
-										</li>
-										<li class="page-item">
-											<a aria-label="Next" class="page-link" href="javascript:void(0)"><i class="fa fa-angle-right"></i></a>
-										</li>
-									</ul>
-								</nav>
-							</div>
+
+                                <!--Failed Credit Card Transactions-->
+                              <div class="px-5 pt-5 pb-1">
+								<h4 class=" ">Failed Credit Card Transactions</h4>
+
+                               
+							  </div>
+                              <!--Table-->
+                              <div class="p-5">
+                                
+                                <div class="">
+                                    <button id="table2-new-row-button" class="btn btn-primary mb-4"> Add New Row</button>
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered border text-nowrap mb-0" id="new-edit">
+                                            <thead>
+                                                <tr>
+                                                    <th>Email</th>
+                                                    <th>Text</th>
+                                                    <th>Phone</th>
+                                                    
+                                                <th name="bstable-actions">Actions</th></tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>b.Chloe@datatables.net</td>
+                                                    <td>96358544</td>
+                                                    <td>03230432</td>
+                                                    
+                                                <td name="bstable-actions"><div class="btn-list">
+            <button id="bEdit" type="button" class="btn btn-sm btn-primary">
+                <span class="fe fe-edit"> </span>
+            </button>
+            <button id="bDel" type="button" class="btn  btn-sm btn-danger">
+                <span class="fe fe-trash-2"> </span>
+            </button>
+            <button id="bAcep" type="button" class="btn  btn-sm btn-primary" style="display:none;">
+                <span class="fe fe-check-circle"> </span>
+            </button>
+            <button id="bCanc" type="button" class="btn  btn-sm btn-danger" style="display:none;">
+                <span class="fe fe-x-circle"> </span>
+            </button>
+        </div></td></tr>
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                              <!--Problem Script-->
+                              <div class="px-5 pt-5 pb-1">
+								<h4 class=" ">Problem Script</h4>
+
+                               
+							  </div>
+                              <!--Table-->
+                              <div class="p-5">
+                                
+                                <div class="">
+                                    <button id="table2-new-row-button" class="btn btn-primary mb-4"> Add New Row</button>
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered border text-nowrap mb-0" id="new-edit">
+                                            <thead>
+                                                <tr>
+                                                    <th>Email</th>
+                                                    <th>Text</th>
+                                                    <th>Phone</th>
+                                                    
+                                                <th name="bstable-actions">Actions</th></tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>b.Chloe@datatables.net</td>
+                                                    <td>96358544</td>
+                                                    <td>03230432</td>
+                                                    
+                                                <td name="bstable-actions"><div class="btn-list">
+            <button id="bEdit" type="button" class="btn btn-sm btn-primary">
+                <span class="fe fe-edit"> </span>
+            </button>
+            <button id="bDel" type="button" class="btn  btn-sm btn-danger">
+                <span class="fe fe-trash-2"> </span>
+            </button>
+            <button id="bAcep" type="button" class="btn  btn-sm btn-primary" style="display:none;">
+                <span class="fe fe-check-circle"> </span>
+            </button>
+            <button id="bCanc" type="button" class="btn  btn-sm btn-danger" style="display:none;">
+                <span class="fe fe-x-circle"> </span>
+            </button>
+        </div></td></tr>
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                              <!--Cancelled Order-->
+                              <div class="px-5 pt-5 pb-1">
+								<h4 class=" ">Cancelled Order</h4>
+
+                               
+							  </div>
+
+                              <!--Table-->
+                              <div class="p-5">
+                                
+                                <div class="">
+                                    <button id="table2-new-row-button" class="btn btn-primary mb-4"> Add New Row</button>
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered border text-nowrap mb-0" id="new-edit">
+                                            <thead>
+                                                <tr>
+                                                    <th>Email</th>
+                                                    <th>Text</th>
+                                                    <th>Phone</th>
+                                                    
+                                                <th name="bstable-actions">Actions</th></tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>b.Chloe@datatables.net</td>
+                                                    <td>96358544</td>
+                                                    <td>03230432</td>
+                                                    
+                                                <td name="bstable-actions"><div class="btn-list">
+            <button id="bEdit" type="button" class="btn btn-sm btn-primary">
+                <span class="fe fe-edit"> </span>
+            </button>
+            <button id="bDel" type="button" class="btn  btn-sm btn-danger">
+                <span class="fe fe-trash-2"> </span>
+            </button>
+            <button id="bAcep" type="button" class="btn  btn-sm btn-primary" style="display:none;">
+                <span class="fe fe-check-circle"> </span>
+            </button>
+            <button id="bCanc" type="button" class="btn  btn-sm btn-danger" style="display:none;">
+                <span class="fe fe-x-circle"> </span>
+            </button>
+        </div></td></tr>
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                    
+							
+
+											
+					      
 
 
-                     
+
+						 
 
 						</div>
 
